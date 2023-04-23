@@ -1,0 +1,159 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=200in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-5pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-50pt}
+
+    
+
+%==== Profile ====%
+
+\begin{center}
+	{\Huge \scshape Yousef Sayed}\\
+    \vspace{10pt}
+	\textbf{Giza $\cdot$ yousefeldahshan6@gmail.com $\cdot$ +20-11-4249-0433 $\cdot$ www.linkedin.com/in/yousef02}\\
+\end{center}
+\vspace{20pt}
+%==== Education ====%
+\header{\textbf{EDUCATION}}
+\vspace{5pt}
+\textbf{Information Technology Institute (ITI)}\hfill Giza\\
+Java Spring Development - Intensive training program \hfill Nov 2022 - MAR 2023\\
+
+\vspace{10pt}
+\textbf{Helwan University - Faculty of Science}\hfill Giza\\
+BSc Computer Science \& Mathematics \textit{GPA: Very Good} \hfill Sep 2017 - May 2021\\
+\vspace{10pt}
+
+
+
+
+%==== Experience ====%
+\header{\textbf{EXPERIENCE}}
+
+ \vspace{5pt}
+
+\textbf{Cairo West Dept Center (WS\#7)} \hfill Giza\\
+\textit{Army conscript - Full Stack developer} \hfill Nov 2021 - Nov 2022\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Developed and built the backend and frontend for an internal management system software used in Cairo West Dept Center (WS\#7) that serves and automate different aircrafts heavy maintance lines and workshops.
+	\item Digitized and automated officers and staff payroll, budget, leaves, and movement and integrated it with the internal management system
+	\item Added a statistical visualizer approach to support the decision making process
+\end{itemize}
+\vspace{5pt}
+\vspace{5pt}
+% Sills *****************
+\header{\textbf{SKILLS}}
+\vspace{5pt}
+\begin{tabular}{ l l }
+	\textbf{Programming Language:} & Java, C++, C, Python, JavaScript                                                         \\
+ % \vspace{10pt}
+	\textbf{Technologies:}         & Git, Maven, JDBC, JPA, JUnit, RestfulAPI, Angular, Spring Framework \\
+                          &,Django, XML, MySql \\
+	\textbf{Tools:}                & GitHub, IntelliJ, Linux Distributions, Agile (Jira \& Trello)                             \\
+\end{tabular}
+\vspace{10pt}
+% Soft Sills *****************
+
+\header{\textbf{SOFT SKILLS}}
+\vspace{15pt}
+ Hard Worker, Work Under Pressure, Extremely Organized, Creative Thinking\\                                              
+% \begin{itemize}
+%     \itemsep 1pt
+% 	\item Hard Worker.
+% 	\item Creative Thinking.
+% 	\item Extremely Organized.
+% \end{itemize}
+\vspace{5pt}
+\vspace{5pt}
+
+% ///////////////// Project
+\header{\textbf{PROJECTS}}
+{\textbf{eCommerce & Shopping Website}} {\sl Java, Angular, Spring MVC, Spring Jpa data, Spring Security  } \hfill 
+\vspace{5pt}
+An e-commerce website, built using Angular and Spring technologies and layered architecture as our graduation project at the Information Technology Institute(ITI).\\
+\vspace*{2mm}
+\vspace{10pt}
+{\textbf{Data visualization app for ML \& DS}} {\sl Python, Numpy, Pandas, scikit-learn, Streamlit, matplotlib} \hfill 
+\vspace{5pt}
+https://github.com/yjo99/Dashboard-for-Visualizing-Data\\
+  \vspace{5pt}
+  This project aims to develop an interactive program for users to input datasets and machine learning parameters to view processed data in real-time. It involves dataset pre-processing, model selection, and real-time visualization of processed data.\\
+\vspace*{2mm}
+
+\header{\textbf{CERTIFICATE}}
+\vspace{5pt}
+\textbf{Advanced Data Analysis Nanodegree} \hfill Udacity \& FWD\\
+\hfill Sep 2021\\
+\textbf{Database Fundemental} \hfill MaharaTech \\
+\hfill DEC 2022\\
+
+\vspace*{2mm}
+
+\ 
+\end{document}
